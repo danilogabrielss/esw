@@ -33,14 +33,9 @@ void ver_carta(int t)
 int main(int argc, char** argv)
 {
 	int s;
-	int *carta, **jog;
+	int *carta;
 	carta = new int [104];
-	jog = new int* [4];
 
-	for (int i = 0; i < 11; ++i)
-	{
-		*jog = new int [11];
-	}
 	for (int i = 0; i < 104; ++i)
 	{
 		carta[i] = 0;
@@ -64,17 +59,6 @@ int main(int argc, char** argv)
 			}
 		}
 	}
-	s = 52;
-	cout << setw(3) << s << "- ";
-	ver_carta(s);
-	cout << endl;
-	s = 104;
-	cout << setw(3) << s << "- ";
-	ver_carta(s);
-	cout << endl;
-	s = 3;
-	cout << setw(3) << s << "- ";
-	ver_carta(s);
 }
 
 //cout << r << "- " << r % 100 << endl;
